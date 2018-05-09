@@ -1,12 +1,7 @@
 var Sequelize = require("sequelize");
 var config = require("../config/connection");
 
-var Chirp = config.define("chirps", {
-    id: {
-        type: Sequelize.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
-    },
+var Chirp = config.define("chirps", {    
     author: {
         type: Sequelize.STRING
     },

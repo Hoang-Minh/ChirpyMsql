@@ -29,8 +29,8 @@ $("#chirp-submit").on("click", function(event) {
   // Make a newChirp object
   var newChirp = {
     author: $("#author").val().trim(),
-    body: $("#chirp-box").val().trim(),
-    created_at: moment().format("YYYY-MM-DD HH:mm:ss")
+    body: $("#chirp-box").val().trim()
+    // created_at: moment().format("YYYY-MM-DD HH:mm:ss")
   };
 
   console.log(newChirp);
